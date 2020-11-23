@@ -19,9 +19,17 @@ btn.place(x=80, y=100)
 imgload = Image.open("img\poopy.png")
 imgload.thumbnail((250, 250))
 render = ImageTk.PhotoImage(imgload)
-img = Label(image=render)
+img = Label(image=render, borderwidth=0)
 img.image = render
 img.place(x=0, y=200)
+
+#cate
+cateload = Image.open("img\cate.gif")
+cateload.thumbnail((30, 30))
+caterender = ImageTk.PhotoImage(cateload)
+imgcate = Label(image=caterender, borderwidth=0)
+imgcate.image = caterender
+imgcate.place(x=50, y=148)
 
 window.resizable(False, False)
 window.title('g0ogple')
