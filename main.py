@@ -16,6 +16,24 @@ categif2.pack()
 categif2.place(x=50, y=145)
 categif2.start()
 
+#explosion 1
+explosiongif1 = AnimatedGif(window, 'img/explosion.gif', 0.01)  # (tkinter.parent, filename, delay between frames)
+explosiongif1.pack()
+explosiongif1.place(x=30, y=55)
+explosiongif1.start()
+
+#explosion 2
+explosiongif2 = AnimatedGif(window, 'img/explosion.gif', 0.01)  # (tkinter.parent, filename, delay between frames)
+explosiongif2.pack()
+explosiongif2.place(x=270, y=55)
+explosiongif2.start()
+
+#rockthrow man
+rockthrowgif = AnimatedGif(window, 'img/rockthrow.gif', 0.05)  # (tkinter.parent, filename, delay between frames)
+rockthrowgif.pack()
+rockthrowgif.place(x=150, y=100)
+rockthrowgif.start()
+
 #goglelubb henter text fra entry boksen og putter det inn i bing jeg mener gogle 2007 trademark
 def submit(): 
     gogleglubb=entry.get()
@@ -25,7 +43,7 @@ lbl=Label(window, text="gogle trademark 2007", fg='red', font=("Helvetica", 16))
 lbl.place(x=60, y=50)
 entry=Entry(window, text="skriv hva er søke", bd=5)
 entry.place(x=80, y=150)
-btn=Button(window, text="tryk får søke", fg='blue', command=submit)
+btn=Button(window, text="tryk får søket", fg='blue', command=submit)
 btn.place(x=80, y=100)
 
 #epic image
