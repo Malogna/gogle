@@ -28,11 +28,17 @@ explosiongif2.pack()
 explosiongif2.place(x=270, y=55)
 explosiongif2.start()
 
-#rockthrow man
-rockthrowgif = AnimatedGif(window, 'img/rockthrow.gif', 0.05)  # (tkinter.parent, filename, delay between frames)
-rockthrowgif.pack()
-rockthrowgif.place(x=150, y=100)
-rockthrowgif.start()
+#rockthrow man 1
+rockthrowgif1 = AnimatedGif(window, 'img/rockthrow.gif', 0.05)  # (tkinter.parent, filename, delay between frames)
+rockthrowgif1.pack()
+rockthrowgif1.place(x=150, y=100)
+rockthrowgif1.start()
+
+#rockthrow man 2
+rockthrowgif2 = AnimatedGif(window, 'img/rockthrow.gif', 0.05)  # (tkinter.parent, filename, delay between frames)
+rockthrowgif2.pack()
+rockthrowgif2.place(x=250, y=100)
+rockthrowgif2.start()
 
 #goglelubb henter text fra entry boksen og putter det inn i bing jeg mener gogle 2007 trademark
 def submit(): 
