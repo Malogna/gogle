@@ -1,7 +1,7 @@
 from tkinter import *
 import webbrowser
 from PIL import Image, ImageTk
-from AnimatedGIF import *
+from AnimatedGif import *
 window=Tk()
 
 #cate 1
