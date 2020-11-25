@@ -3,3 +3,7 @@
 
 #.vs folder
 /.vs/
+/env
+/build/main
+/dist
+*.spec
