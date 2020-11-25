@@ -45,14 +45,34 @@ def submit():
     gogleglubb=entry.get()
     webbrowser.open(f"https://www.bing.com/search?q={gogleglubb}")
 
+def exit():
+    sys.exit()
+
+def episknap():
+    for _i in range(10):
+        print("bruh")
+
+#epic text logo
 lbl=Label(window, text="gogle trademark 2007", fg='red', font=("Helvetica", 16))
 lbl.place(x=60, y=50)
+
+#search entry
 entry=Entry(window, text="skriv hva er søke", bd=5)
 entry.place(x=80, y=150)
+
+#search button
 btn=Button(window, text="tryk får søket", fg='blue', command=submit)
 btn.place(x=80, y=100)
 
-#epic image
+#quitbutton button
+quitbtn=Button(window, text="quit", fg='black', command=exit)
+quitbtn.place(x=10, y=10)
+
+#epic button
+epicbtn=Button(window, text="episk knap (ike tryke!11!!)", fg='black', command=episknap)
+epicbtn.place(x=150, y=10)
+
+#epic image logo
 imgload = Image.open("img\poopy.png")
 imgload.thumbnail((250, 250))
 render = ImageTk.PhotoImage(imgload)
@@ -60,6 +80,7 @@ img = Label(image=render, borderwidth=0)
 img.image = render
 img.place(x=0, y=200)
 
+#misc
 window.resizable(False, False)
 window.title('g0ogple')
 window.geometry("300x300+10+10")
