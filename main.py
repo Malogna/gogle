@@ -4,11 +4,17 @@ from PIL import Image, ImageTk
 from AnimatedGIF import *
 window=Tk()
 
-#cate
+#cate 1
 categif1 = AnimatedGif(window, 'img/cate.gif', 0.01)  # (tkinter.parent, filename, delay between frames)
 categif1.pack()
-categif1.place(x=150, y=20)
+categif1.place(x=205, y=145)
 categif1.start()  # Shows gif at first frame and we are ready to go
+
+#cate 2
+categif2 = AnimatedGif(window, 'img/cate.gif', 0.01)  # (tkinter.parent, filename, delay between frames)
+categif2.pack()
+categif2.place(x=50, y=145)
+categif2.start()  # Shows gif at first frame and we are ready to go
 
 #goglelubb henter text fra entry boksen og putter det inn i bing jeg mener gogle 2007 trademark
 def submit(): 
@@ -34,4 +40,3 @@ window.resizable(False, False)
 window.title('g0ogple')
 window.geometry("300x300+10+10")
 window.mainloop()
-categif1.stop()  # Setting stop flag, which ends the update loop (animation)
