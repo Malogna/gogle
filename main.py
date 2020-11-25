@@ -8,13 +8,13 @@ window=Tk()
 categif1 = AnimatedGif(window, 'img/cate.gif', 0.01)  # (tkinter.parent, filename, delay between frames)
 categif1.pack()
 categif1.place(x=205, y=145)
-categif1.start()  # Shows gif at first frame and we are ready to go
+categif1.start()
 
 #cate 2
 categif2 = AnimatedGif(window, 'img/cate.gif', 0.01)  # (tkinter.parent, filename, delay between frames)
 categif2.pack()
 categif2.place(x=50, y=145)
-categif2.start()  # Shows gif at first frame and we are ready to go
+categif2.start()
 
 #goglelubb henter text fra entry boksen og putter det inn i bing jeg mener gogle 2007 trademark
 def submit(): 
@@ -39,4 +39,5 @@ img.place(x=0, y=200)
 window.resizable(False, False)
 window.title('g0ogple')
 window.geometry("300x300+10+10")
+window.wm_attributes("-topmost", 1)
 window.mainloop()
