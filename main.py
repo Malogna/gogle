@@ -1,6 +1,7 @@
 from tkinter import *
 import webbrowser
 from PIL import Image, ImageTk
+from AnimatedGIF import *
 window=Tk()
 
 #goglelubb henter text fra entry boksen og putter det inn i bing jeg mener gogle 2007 trademark
@@ -24,7 +25,7 @@ img.image = render
 img.place(x=0, y=200)
 
 #cate
-cateload = Image.open("img\cate.gif")
+cateload = AnimatedGif(parent, 'cate.gif', 0.04)
 cateload.thumbnail((30, 30))
 caterender = ImageTk.PhotoImage(cateload)
 imgcate = Label(image=caterender, borderwidth=0)
