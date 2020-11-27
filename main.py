@@ -43,7 +43,7 @@ rockthrowgif2.start()
 #goglelubb henter text fra entry boksen og putter det inn i bing jeg mener gogle 2007 trademark
 def submit(): 
     gogleglubb=entry.get()
-    webbrowser.open(f"https://www.bing.com/search?q={gogleglubb}")
+    webbrowser.get('C:\\Program Files\\Internet Explorer\\IEXPLORE.EXE').open(f"https://www.bing.com/search?q={gogleglubb}")
 
 def exit():
     sys.exit()
