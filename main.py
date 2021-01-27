@@ -2,7 +2,7 @@ from tkinter import *
 import webbrowser
 from PIL import Image, ImageTk
 from AnimatedGif import *
-import subprocess, sys
+import sys
 window=Tk()
 
 #cate 1
