@@ -2,6 +2,7 @@ from tkinter import *
 import webbrowser
 from PIL import Image, ImageTk
 from AnimatedGif import *
+import subprocess, sys
 window=Tk()
 
 #cate 1
@@ -45,12 +46,40 @@ def submit():
     gogleglubb=entry.get()
     webbrowser.get('C:\\Program Files\\Internet Explorer\\IEXPLORE.EXE').open(f"https://www.bing.com/search?q={gogleglubb}")
 
+def crashsubmit():
+    webbrowser.get("C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s").open("\\\\.\globalroot\device\condrv\kernelconnect")
+
 def exit():
     sys.exit()
 
 def episknap():
-    for _i in range(10):
-        print("bruh")
+    # Toplevel object which will  
+    # be treated as a new window 
+    newWindow = Toplevel(window) 
+  
+    # sets the title of the 
+    # Toplevel widget 
+    newWindow.title("advarsel") 
+  
+    # sets the geometry of toplevel 
+    newWindow.geometry("200x200") 
+  
+    # A Label widget to show in toplevel 
+    Label(newWindow,  
+          text ="du burde ikke ha trykket her").pack()
+    imgload = Image.open("img/neinei.png")
+    imgload.thumbnail((250, 250))
+    render = ImageTk.PhotoImage(imgload)
+    img = Label(newWindow, image=render, borderwidth=0)
+    img.image = render
+    img.place(x=-25, y=20)
+
+    #crash button
+    crashbtn=Button(newWindow, text="fortsett hvis du tørr", fg='blue', command=crashsubmit)
+    crashbtn.place(x=25, y=165)
+    
+    newWindow.wm_attributes("-topmost", 1)
+    newWindow.resizable(False, False)
 
 #epic text logo
 lbl=Label(window, text="gogle trademark 2007", fg='red', font=("Helvetica", 16))
